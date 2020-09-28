@@ -2,7 +2,7 @@
 class Duel: 
     ''' 
     Duel is an object that holds a duel. Duels are formatted as such:
-    {"PLAYER1": {"SCORE":(0-4), "POINTS":0, "ID":steamID}, "PLAYER2": {"SCORE":(0-4), "POINTS":0, "ID": steamID}, "RESETS": (0-4)}
+    {"PLAYER1": {"SCORE":(0-4), "POINTS":0, "ID":steamID}, "PLAYER2": {"SCORE":(0-4), "POINTS":0, "ID": steamID}, "RESETS": (0-4), "REGION":(US, EU, etc)}
     '''
     def __init__(self, duel_info : dict):# DICT WITH PLAYER STEAM ID AND SCORE
         self.info = duel_info
@@ -47,7 +47,7 @@ def tally(duel : Duel, curr_tally : dict):
 
 
 if __name__=="__main__":
-    dictionary_test = {"PLAYER1": {"SCORE":4, "POINTS":0}, "PLAYER2": {"SCORE":(2), "POINTS":0}, "RESETS": 3}
+    dictionary_test = {"PLAYER1": {"SCORE":4, "POINTS":0}, "PLAYER2": {"SCORE":(2), "POINTS":0}, "RESETS": 3, "REGION": "EU"}
     duel_test = Duel(dictionary_test)
     duel_test.player_points()
     print(duel_test)
