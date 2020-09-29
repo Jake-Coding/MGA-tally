@@ -3,5 +3,7 @@ This is a tally for the Market Garden Arena in Jump Academy. You'll need to hook
 
 ## How to use it
 run `app.py` in console using `py app.py` (or however you'd like to run it).  
-The app uses Ridge's scoring system as of 09/28/2020. If it changes, I will try to update the app to match.  
-Currently, it is not linked to JA, but when it is, there will be a webhook on the JA server running the app (hopefully). 
+The app uses Ridge's scoring system as of 09/28/2020. 
+
+UPDATE 9/29/20:  
+ - Squid is planning on reimplementing the old system in some manner. This app doesn't have much of a use anymore. It was a good run :P
