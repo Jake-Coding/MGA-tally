@@ -61,8 +61,8 @@ def main():
     sheet = service.spreadsheets()
     # result = sheet.values().get(spreadsheetId=ID,range=RANGE).execute()
     # values = result.get('values', [])
-    test_append_values = [ ["CaWU", "4", "US West"]    ]
-    append(test_append_values, {"ID": ID, "RANGE": RANGE}, sheet)
+    # test_append_values = [ ["CaWU", "4", "US West"]    ]
+    # append(test_append_values, {"ID": ID, "RANGE": RANGE}, sheet)
     # if not values:
     #     print('No data found.')
     # else:
